@@ -190,18 +190,29 @@ public class BoardCreator : MonoBehaviour
 
         foreach (Room room in rooms)
         {
-            int xLimit = room.xPos + room.roomWidth + 2;
-            int yLimit = room.yPos + room.roomHeight + 2;
+            int xLimit = room.xPos + room.roomWidth + 3;
+            int yLimit = room.yPos + room.roomHeight + 3;
 
      
             
 
-            for (int x = room.xPos - 2; x < xLimit; x++)
+            /*for (int x = room.xPos - 3; x < xLimit; x++)
             {
-                for (int y = room.yPos - 2; y < yLimit; y++)
+                for (int y = room.yPos - 3; y < yLimit; y++)
                 {
-                    
-                   if (tiles[x][y] == TileType.Wall)
+
+                    if (tiles[x][y] == TileType.Wall)
+                        if (x == room.xPos - 3 || y == room.yPos - 3 || x == xLimit - 1 || y == yLimit - 1)
+                            InstantiateFromArray(outerWallTiles, x, y);
+                }
+            }*/
+
+            for (int x = room.xPos - 3; x < xLimit; x++)
+            {
+                for (int y = room.yPos - 3; y < yLimit; y++)
+                {
+
+                    if (tiles[x][y] == TileType.Wall)
                         InstantiateFromArray(wallTiles, x, y);
                 }
             }
