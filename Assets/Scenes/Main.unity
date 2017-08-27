@@ -259,7 +259,7 @@ Prefab:
     - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
       propertyPath: numRooms.m_Max
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
