@@ -108,107 +108,13 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &903926649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 903926654}
-  - component: {fileID: 903926653}
-  - component: {fileID: 903926652}
-  - component: {fileID: 903926651}
-  - component: {fileID: 903926650}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &903926650
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903926649}
-  m_Enabled: 1
---- !u!124 &903926651
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903926649}
-  m_Enabled: 1
---- !u!92 &903926652
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903926649}
-  m_Enabled: 1
---- !u!20 &903926653
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903926649}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
---- !u!4 &903926654
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 903926649}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1792947688
+--- !u!1001 &1054812860
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4083949135946126, guid: 649a6ef35e19f2d489bb2c04eceb877a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -239,103 +145,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083949135946126, guid: 649a6ef35e19f2d489bb2c04eceb877a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: columns
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: rows
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: numRooms.m_Min
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: numRooms.m_Max
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
       propertyPath: roomWidth.m_Max
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: roomHeight.m_Max
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: corridorLength.m_Min
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: corridorLength.m_Max
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
       propertyPath: roomWidth.m_Min
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
       propertyPath: roomHeight.m_Min
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+        type: 2}
+      propertyPath: roomHeight.m_Max
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
-      propertyPath: wallTiles.Array.data[0]
-      value: 
-      objectReference: {fileID: 110520, guid: 2570048905bd94d6f8a99d13b80daf90, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+      propertyPath: corridorLength.m_Min
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
-      propertyPath: wallTiles.Array.data[1]
-      value: 
-      objectReference: {fileID: 110520, guid: b86334000bc0f47ba8dd33ea88cfcdb1, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[2]
-      value: 
-      objectReference: {fileID: 110520, guid: 01ca47a83ebe24ca5a2f6b1d6dcd7481, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[3]
-      value: 
-      objectReference: {fileID: 110520, guid: 022eda2f1f0cb45e28ff6840b68928bc, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[4]
-      value: 
-      objectReference: {fileID: 110520, guid: e1816487b15cd4c5fbd9587521e068ca, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[5]
-      value: 
-      objectReference: {fileID: 110520, guid: 5ddc2d7828b2d462286f09274199ad9a, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[6]
-      value: 
-      objectReference: {fileID: 110520, guid: 64139c47b57e34c5fa97fd79f8d25244, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[7]
-      value: 
-      objectReference: {fileID: 110520, guid: 741804431f4d341cdae1f15b3896aeff, type: 2}
-    - target: {fileID: 114928307494795918, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: wallTiles.Array.data[8]
-      value: 
-      objectReference: {fileID: 110520, guid: 741804431f4d341cdae1f15b3896aeff, type: 2}
+      propertyPath: corridorLength.m_Max
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 649a6ef35e19f2d489bb2c04eceb877a, type: 2}
   m_IsPrefabParent: 0

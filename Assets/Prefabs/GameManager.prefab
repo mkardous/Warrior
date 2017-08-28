@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4083949135946126}
   - component: {fileID: 114006856830438360}
-  - component: {fileID: 114928307494795918}
+  - component: {fileID: 114203807243166706}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -56,7 +56,7 @@ MonoBehaviour:
   turnDelay: 0.1
   playerFoodPoints: 100
   playersTurn: 1
---- !u!114 &114928307494795918
+--- !u!114 &114203807243166706
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -64,11 +64,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1097852715904070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf13640c2ed124740bb8716f9b1f844e, type: 3}
+  m_Script: {fileID: 11500000, guid: c54cdbc43c9fbf746aa77ffb3e5b5683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columns: 100
-  rows: 100
+  columns: 1000
+  rows: 1000
   numRooms:
     m_Min: 15
     m_Max: 20
@@ -79,8 +79,8 @@ MonoBehaviour:
     m_Min: 3
     m_Max: 10
   corridorLength:
-    m_Min: 6
-    m_Max: 10
+    m_Min: 15
+    m_Max: 20
   floorTiles:
   - {fileID: 106160, guid: 038998774947c4a8fa170d5b4492a7dd, type: 2}
   - {fileID: 137908, guid: 41775b29042354678bcd58bb1a75871e, type: 2}
@@ -91,9 +91,16 @@ MonoBehaviour:
   - {fileID: 110520, guid: 5535fd6cd705e4a79a1d5a4f114de5dc, type: 2}
   - {fileID: 110520, guid: c18e9692903814865aa9a855aaa66df5, type: 2}
   wallTiles:
+  - {fileID: 110520, guid: 2570048905bd94d6f8a99d13b80daf90, type: 2}
+  - {fileID: 110520, guid: b86334000bc0f47ba8dd33ea88cfcdb1, type: 2}
+  - {fileID: 110520, guid: 01ca47a83ebe24ca5a2f6b1d6dcd7481, type: 2}
+  - {fileID: 110520, guid: 022eda2f1f0cb45e28ff6840b68928bc, type: 2}
+  - {fileID: 110520, guid: e1816487b15cd4c5fbd9587521e068ca, type: 2}
+  - {fileID: 110520, guid: 5ddc2d7828b2d462286f09274199ad9a, type: 2}
+  - {fileID: 110520, guid: 64139c47b57e34c5fa97fd79f8d25244, type: 2}
   - {fileID: 110520, guid: 741804431f4d341cdae1f15b3896aeff, type: 2}
   outerWallTiles:
   - {fileID: 110520, guid: 7094f72151ec74f569c4e03f1ec0f8e7, type: 2}
   - {fileID: 110520, guid: b0ace21a29149403094422fb3bd96aa9, type: 2}
   - {fileID: 110520, guid: e85c94355cc4641da919bd5d0ac956d4, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 1116239327135490, guid: bb3610e270959664ba6dce67f0c087c3, type: 2}
