@@ -103,4 +103,4 @@ MonoBehaviour:
   - {fileID: 110520, guid: 7094f72151ec74f569c4e03f1ec0f8e7, type: 2}
   - {fileID: 110520, guid: b0ace21a29149403094422fb3bd96aa9, type: 2}
   - {fileID: 110520, guid: e85c94355cc4641da919bd5d0ac956d4, type: 2}
-  player: {fileID: 1988930148987538, guid: 18c6e555100a15f4f9f85e870a06b14c, type: 2}
+  player: {fileID: 1116239327135490, guid: bb3610e270959664ba6dce67f0c087c3, type: 2}

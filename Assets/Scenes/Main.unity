@@ -115,11 +115,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
-        type: 2}
-      propertyPath: outerWallTiles.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4083949135946126, guid: 649a6ef35e19f2d489bb2c04eceb877a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -154,14 +149,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
         type: 2}
-      propertyPath: outerWallTiles.Array.data[3]
+      propertyPath: player
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114203807243166706, guid: 649a6ef35e19f2d489bb2c04eceb877a,
+      objectReference: {fileID: 1116239327135490, guid: bb3610e270959664ba6dce67f0c087c3,
         type: 2}
-      propertyPath: outerWallTiles.Array.data[4]
-      value: 
-      objectReference: {fileID: 110520, guid: e85c94355cc4641da919bd5d0ac956d4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 649a6ef35e19f2d489bb2c04eceb877a, type: 2}
   m_IsPrefabParent: 0
