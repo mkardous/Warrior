@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warrior", "Assembly-CSharp.csproj", "{AE9652C0-235D-5B07-787C-90432F2D850F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warrior", "Warrior.csproj", "{6B72480B-FD65-4071-220A-B2A1BB8DBC74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE9652C0-235D-5B07-787C-90432F2D850F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE9652C0-235D-5B07-787C-90432F2D850F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE9652C0-235D-5B07-787C-90432F2D850F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE9652C0-235D-5B07-787C-90432F2D850F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B72480B-FD65-4071-220A-B2A1BB8DBC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B72480B-FD65-4071-220A-B2A1BB8DBC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B72480B-FD65-4071-220A-B2A1BB8DBC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B72480B-FD65-4071-220A-B2A1BB8DBC74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

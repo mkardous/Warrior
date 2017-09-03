@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 95510052021406682}
   - component: {fileID: 50377855166844656}
   - component: {fileID: 61479713683098832}
-  - component: {fileID: 114679723005946804}
+  - component: {fileID: 114022331197813684}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Player
@@ -176,7 +176,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114679723005946804
+--- !u!114 &114022331197813684
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -97,7 +97,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 2.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -168,7 +168,7 @@ Animator:
   m_GameObject: {fileID: 1116239327135490}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1535380f35e45fb4ca09930f61375a2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: b0d974e3c936c8345bf8e135efa1d16e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e4ec9074347a0488f91d611854ccd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Attack_A: {fileID: 1286118240960066, guid: 0e1c5a9dda91b94479a91872819a5e27, type: 2}
   baseSpeed: 2
 --- !u!124 &124621707732319410
 Behaviour:
