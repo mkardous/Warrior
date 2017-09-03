@@ -36,8 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4900172030110860}
   - component: {fileID: 212277884802805030}
-  - component: {fileID: 61708557045732792}
   - component: {fileID: 114791413353755582}
+  - component: {fileID: 61667032344459580}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -72,7 +72,7 @@ Transform:
   m_Father: {fileID: 4461341664331376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61708557045732792
+--- !u!61 &61667032344459580
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,7 +85,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.23}
+  m_Size: {x: 0.1, y: 0.24}
 --- !u!114 &114576254722782954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7faca87e3ee59e2418d9c62a1a5ceaad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 720
 --- !u!212 &212277884802805030
 SpriteRenderer:
   m_ObjectHideFlags: 1

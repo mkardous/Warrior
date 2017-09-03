@@ -19,4 +19,5 @@ public class Sword : MonoBehaviour {
     {
         position.Rotate(0, 0, rotationSpeed * 1 / Time.deltaTime);
     }
+
 }
