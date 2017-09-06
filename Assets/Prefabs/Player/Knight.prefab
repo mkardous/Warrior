@@ -189,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Attack_A: {fileID: 1286118240960066, guid: 0e1c5a9dda91b94479a91872819a5e27, type: 2}
   baseSpeed: 2
-  fireRate: 0.35
+  fireRate: 0.3
 --- !u!124 &124621707732319410
 Behaviour:
   m_ObjectHideFlags: 1
