@@ -98,9 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPosition: {fileID: 0}
-  linSpeed: 5
+  linearSpeed: 4
   maxDistance: 2
-  myDistance: 0
 --- !u!114 &114791413353755582
 MonoBehaviour:
   m_ObjectHideFlags: 1

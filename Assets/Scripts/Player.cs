@@ -59,8 +59,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         //Debug.Log(Time.deltaTime * 5);
+        /* Attack up-left doesnt instantiate when using space bar*/
 
-        if (Input.GetButtonDown("Attack"))
+        if (Input.GetButtonDown("Fire1"))
         {
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg - 90;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);

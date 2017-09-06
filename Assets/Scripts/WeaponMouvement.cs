@@ -7,9 +7,9 @@ public class WeaponMouvement: MonoBehaviour
 {
 
     public Transform myPosition;
-    public float linSpeed = 5f;
-    public float maxDistance = 100f;
-    public float myDistance = 5.0f;
+    public float linearSpeed = 5f;
+    public float maxDistance = 10f;
+    private float myDistance = 0f;
     // Use this for initialization
 
     void Awake()
@@ -20,9 +20,9 @@ public class WeaponMouvement: MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        myPosition.Translate(Vector3.up * Time.deltaTime * linSpeed);
+        myPosition.Translate(Vector3.up * Time.deltaTime * linearSpeed);
 
-        myDistance += Time.deltaTime * linSpeed;
+        myDistance += Time.deltaTime * linearSpeed;
 
         if (myDistance > maxDistance)
         {

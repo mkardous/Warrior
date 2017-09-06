@@ -92,7 +92,6 @@
     <Compile Include="Assets\Scripts\BoardCreator\Corridors.cs" />
     <Compile Include="Assets\Scripts\BoardCreator\IntRange.cs" />
     <Compile Include="Assets\Scripts\BoardCreator\Rooms.cs" />
-    <Compile Include="Assets\Scripts\DestroyByWall.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

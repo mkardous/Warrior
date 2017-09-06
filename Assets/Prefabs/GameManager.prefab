@@ -70,17 +70,17 @@ MonoBehaviour:
   columns: 1000
   rows: 1000
   numRooms:
-    m_Min: 15
-    m_Max: 20
-  roomWidth:
     m_Min: 2
-    m_Max: 5
+    m_Max: 2
+  roomWidth:
+    m_Min: 10
+    m_Max: 10
   roomHeight:
     m_Min: 2
     m_Max: 5
   corridorLength:
     m_Min: 5
-    m_Max: 10
+    m_Max: 5
   floorTiles:
   - {fileID: 106160, guid: 038998774947c4a8fa170d5b4492a7dd, type: 2}
   - {fileID: 137908, guid: 41775b29042354678bcd58bb1a75871e, type: 2}
