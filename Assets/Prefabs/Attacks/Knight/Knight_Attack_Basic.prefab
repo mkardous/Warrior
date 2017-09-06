@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPosition: {fileID: 0}
-  linearSpeed: 4
+  linearSpeed: 6
   maxDistance: 2
 --- !u!114 &114791413353755582
 MonoBehaviour:

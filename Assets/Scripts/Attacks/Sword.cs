@@ -17,7 +17,7 @@ public class Sword : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        position.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+        position.Rotate(0, 0, rotationSpeed * 1 / Time.deltaTime);
     }
 
 }

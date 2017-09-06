@@ -8,13 +8,16 @@ public class Player : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb2D;
     private Transform transform;
+
     public GameObject Attack_A;
     //public GameObject Attack_B;
-    float x;
-    float y;
-
     public float baseSpeed = 4f;
+    public float fireRate = 2;
+
+    private float x;
+    private float y;
     private float modifiedSpeed;
+    private float nextFire;
 
     // Use this for initialization
     void Start()
@@ -61,8 +64,9 @@ public class Player : MonoBehaviour
         //Debug.Log(Time.deltaTime * 5);
         /* Attack up-left doesnt instantiate when using space bar*/
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
+            nextFire = Time.time + fireRate;
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg - 90;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
