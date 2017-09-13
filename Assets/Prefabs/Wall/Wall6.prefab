@@ -10,7 +10,6 @@ GameObject:
   - component: {fileID: 410520}
   - component: {fileID: 21210520}
   - component: {fileID: 6133920}
-  - component: {fileID: 114281940120769376}
   m_Layer: 8
   m_Name: Wall6
   m_TagString: Wall
@@ -91,14 +90,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110520}
   m_IsPrefabParent: 1
---- !u!114 &114281940120769376
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9711ac6742aba5146a513f8c5b9cd27b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
