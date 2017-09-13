@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50769399517666040}
   - component: {fileID: 61250302709275928}
   - component: {fileID: 114459545153327188}
-  - component: {fileID: 114945974363974504}
   m_Layer: 0
   m_Name: Sword_Attack_Linear
   m_TagString: Weapon
@@ -55,10 +54,10 @@ Rigidbody2D:
   m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 10
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -92,17 +91,6 @@ MonoBehaviour:
   myPosition: {fileID: 0}
   linearSpeed: 5
   maxDistance: 2
---- !u!114 &114945974363974504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1388858874403070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9711ac6742aba5146a513f8c5b9cd27b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212185730956072540
 SpriteRenderer:
   m_ObjectHideFlags: 1
