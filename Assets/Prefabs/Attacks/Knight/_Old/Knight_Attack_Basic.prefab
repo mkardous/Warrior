@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212812702367636594}
   - component: {fileID: 50474483153495792}
   - component: {fileID: 61017185226426994}
-  - component: {fileID: 114320958035029938}
+  - component: {fileID: 114212518584888930}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Weapon
@@ -107,6 +107,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.23}
+--- !u!114 &114212518584888930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1584056744809508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faca87e3ee59e2418d9c62a1a5ceaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114313336825406762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,20 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c05e089823b2843821d0cb40c98d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPosition: {fileID: 0}
   linearSpeed: 6
   maxDistance: 2
---- !u!114 &114320958035029938
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1584056744809508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7faca87e3ee59e2418d9c62a1a5ceaad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212812702367636594
 SpriteRenderer:
   m_ObjectHideFlags: 1

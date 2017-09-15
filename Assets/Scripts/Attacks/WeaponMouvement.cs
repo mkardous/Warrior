@@ -6,10 +6,12 @@ using UnityEngine;
 public class WeaponMouvement: MonoBehaviour
 {
 
-    public Transform myPosition;
+    
     public float linearSpeed = 5f;
     public float maxDistance = 10f;
+
     private float myDistance = 0f;
+    private Transform myPosition;
     // Use this for initialization
 
     void Awake()

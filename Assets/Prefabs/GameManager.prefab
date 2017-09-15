@@ -70,8 +70,8 @@ MonoBehaviour:
   columns: 1000
   rows: 1000
   numRooms:
-    m_Min: 2
-    m_Max: 2
+    m_Min: 15
+    m_Max: 20
   roomWidth:
     m_Min: 10
     m_Max: 10
