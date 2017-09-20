@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212491681517399194}
   - component: {fileID: 50909612068110784}
   - component: {fileID: 61441260311521776}
-  - component: {fileID: 114533657344811226}
   - component: {fileID: 114712617588360994}
+  - component: {fileID: 114533657344811226}
   - component: {fileID: 114141036369236368}
   m_Layer: 0
   m_Name: Sword_Attack
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  playerAttack: 0
+  playerAttack: 1
 --- !u!114 &114533657344811226
 MonoBehaviour:
   m_ObjectHideFlags: 1
