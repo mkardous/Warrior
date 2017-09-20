@@ -6,12 +6,22 @@ public class WeaponDamage : MonoBehaviour {
 
 
     public int damage = 1;
+    public bool playerAttack = false;
+
+    private GameObject other;
+    private Player otherScript;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (playerAttack)
         {
-            Destroy(gameObject);
+            
         }
+
+        else
+        {
+            
+        }
+         
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    public int HP = 3;
     public float baseSpeed = 4f;
     public GameObject Attack_A;
     //public GameObject Attack_B;
