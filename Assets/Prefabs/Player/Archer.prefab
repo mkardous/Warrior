@@ -200,8 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e4ec9074347a0488f91d611854ccd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSpeed: 3
   Attack_A: {fileID: 1155874281505694, guid: fec23fffccb083e4daba667b1324f269, type: 2}
-  baseSpeed: 2
   fireRate: 0.3
 --- !u!124 &124598659696470140
 Behaviour:

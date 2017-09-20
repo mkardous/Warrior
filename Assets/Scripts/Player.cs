@@ -3,16 +3,14 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-
+    public float baseSpeed = 4f;
+    public GameObject Attack_A;
+    //public GameObject Attack_B;
+    public float fireRate = 2;
 
     private Animator animator;
     private Rigidbody2D rb2D;
     private Transform transform;
-
-    public GameObject Attack_A;
-    //public GameObject Attack_B;
-    public float baseSpeed = 4f;
-    public float fireRate = 2;
 
     private float x;
     private float y;
@@ -32,16 +30,15 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         //mouvement related
-        modifiedSpeed = baseSpeed + (baseSpeed / 2); //add agility modificator
+        modifiedSpeed = baseSpeed; //+ (baseSpeed / 2); add agility modificator
 
 //#if UNITY_STANDALONE || UNITY_WEBPLATER
 		float input_x = Input.GetAxisRaw ("Horizontal");
-		float input_y = Input.GetAxisRaw ("Vertical");
+        float input_y = Input.GetAxisRaw("Vertical");
 //#else
 //#endif
 
         bool isWalking = (Mathf.Abs(input_x) + Mathf.Abs(input_y)) > 0;
-
         animator.SetBool("isWalking", isWalking);
 
         if (isWalking)
@@ -61,9 +58,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(Time.deltaTime * 5);
-        /* Attack up-left doesnt instantiate when using space bar*/
-
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
