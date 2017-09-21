@@ -13,7 +13,7 @@ public class WeaponDamage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerAttack)
+       /* if (playerAttack)
         {
             
         }
@@ -21,7 +21,7 @@ public class WeaponDamage : MonoBehaviour {
         else
         {
             
-        }
+        }*/
          
     }
 }

@@ -74,7 +74,7 @@ public class BoardCreator : MonoBehaviour
         // Setup the first room, there is no previous corridor so we do not use one.
         rooms[0].SetupRoom(roomWidth, roomHeight, columns, rows);
 
-        Vector3 playerPosition = new Vector3(rooms[0].xPos + rooms[0].roomWidth / 2, rooms[0].yPos + rooms[0].roomHeight / 2, 0);
+        Vector3 playerPosition = new Vector3(rooms[0].xPos + rooms[0].roomWidth / 2, rooms[0].yPos + rooms[0].roomHeight / 2, -5);
         Instantiate(player, playerPosition, Quaternion.identity);
 
         // Setup the first corridor using the first room.
