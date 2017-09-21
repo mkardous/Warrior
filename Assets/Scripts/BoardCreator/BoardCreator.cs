@@ -44,7 +44,7 @@ public class BoardCreator : MonoBehaviour
         InstantiateOuterWalls();
     }
 
-
+   
     void SetupTilesArray()
     {
         // Set the tiles jagged array to the correct width.
