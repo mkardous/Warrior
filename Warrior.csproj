@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\BoardCreator\IntRange.cs" />
     <Compile Include="Assets\Scripts\BoardCreator\Rooms.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

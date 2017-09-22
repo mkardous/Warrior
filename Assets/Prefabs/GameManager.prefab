@@ -122,3 +122,4 @@ MonoBehaviour:
   - {fileID: 110520, guid: b0ace21a29149403094422fb3bd96aa9, type: 2}
   - {fileID: 110520, guid: e85c94355cc4641da919bd5d0ac956d4, type: 2}
   player: {fileID: 1116239327135490, guid: bb3610e270959664ba6dce67f0c087c3, type: 2}
+  exit: {fileID: 1033616204373714, guid: bcb4aaf7250de784995ef55fa9581f46, type: 2}

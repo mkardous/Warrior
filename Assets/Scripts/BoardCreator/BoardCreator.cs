@@ -10,16 +10,19 @@ public class BoardCreator : MonoBehaviour
     }
 
 
-    public int columns = 100;                                 // The number of columns on the board (how wide it will be).
-    public int rows = 100;                                    // The number of rows on the board (how tall it will be).
+    public int columns = 100;                                // The number of columns on the board (how wide it will be).
+    public int rows = 100;                                   // The number of rows on the board (how tall it will be).
     public IntRange numRooms = new IntRange(15, 20);         // The range of the number of rooms there can be.
     public IntRange roomWidth = new IntRange(3, 10);         // The range of widths rooms can have.
     public IntRange roomHeight = new IntRange(3, 10);        // The range of heights rooms can have.
     public IntRange corridorLength = new IntRange(6, 10);    // The range of lengths corridors between rooms can have.
-    public GameObject[] floorTiles;                           // An array of floor tile prefabs.
-    public GameObject[] wallTiles;                            // An array of wall tile prefabs.
-    public GameObject[] outerWallTiles;                       // An array of outer wall tile prefabs.
-    public GameObject player;
+    public GameObject[] floorTiles;                          // An array of floor tile prefabs.
+    public GameObject[] wallTiles;                           // An array of wall tile prefabs.
+    public GameObject[] outerWallTiles;                      // An array of outer wall tile prefabs.
+    public GameObject player;                                // Player Prefab
+    public GameObject exit;
+    
+
 
     private TileType[][] tiles;                               // A jagged array of tile types representing the board, like a grid.
     private Room[] rooms;                                     // All the rooms that are created for this board.
@@ -41,11 +44,19 @@ public class BoardCreator : MonoBehaviour
 
         InstantiateFloorTiles();
         InstantiateWallTiles();
-        InstantiateOuterWalls();
+        //InstantiateOuterWalls();
+        InstantiatePlayer();
+        InstantiateExit();
     }
 
-   
-    void SetupTilesArray()
+   /**
+   * void SetUpTilesArray()
+   * 
+   * Create array that contains each board tile
+   * @PARAM Null
+   * @Return Null
+   */
+   void SetupTilesArray()
     {
         // Set the tiles jagged array to the correct width.
         tiles = new TileType[columns][];
@@ -58,7 +69,14 @@ public class BoardCreator : MonoBehaviour
         }
     }
 
-
+    /**
+    * void CreateRoomsAndCorridors()
+    * 
+    * Create rooms array and corridors attached to each room
+    * 
+    * @PARAM Null
+    * @Return Null
+    */
     void CreateRoomsAndCorridors()
     {
         // Create the rooms array with a random size.
@@ -74,8 +92,6 @@ public class BoardCreator : MonoBehaviour
         // Setup the first room, there is no previous corridor so we do not use one.
         rooms[0].SetupRoom(roomWidth, roomHeight, columns, rows);
 
-        Vector3 playerPosition = new Vector3(rooms[0].xPos + rooms[0].roomWidth / 2, rooms[0].yPos + rooms[0].roomHeight / 2, -5);
-        Instantiate(player, playerPosition, Quaternion.identity);
 
         // Setup the first corridor using the first room.
         corridors[0].SetupCorridor(rooms[0], corridorLength, roomWidth, roomHeight, columns, rows, true);
@@ -97,17 +113,18 @@ public class BoardCreator : MonoBehaviour
                 // Setup the corridor based on the room that was just created.
                 corridors[i].SetupCorridor(rooms[i], corridorLength, roomWidth, roomHeight, columns, rows, false);
             }
-
-            if (i == rooms.Length * .5f)
-            {
-                Vector3 playerPos = new Vector3(rooms[i].xPos, rooms[i].yPos, 0);
-                //Instantiate(player, playerPos, Quaternion.identity);
-            }
         }
 
     }
 
-
+    /**
+    * void SetTilesValuesForRooms()
+    * 
+    * Defines floor tile for each room
+    * 
+    * @PARAM Null
+    * @Return Null
+    */
     void SetTilesValuesForRooms()
     {
         // Go through all the rooms...
@@ -132,7 +149,14 @@ public class BoardCreator : MonoBehaviour
         }
     }
 
-
+    /**
+* void SetTilesValuesForCorridors()
+* 
+* Defines floor tile for each corridor
+* 
+* @PARAM Null
+* @Return Null
+*/
     void SetTilesValuesForCorridors()
     {
         // Go through every corridor...
@@ -171,7 +195,14 @@ public class BoardCreator : MonoBehaviour
         }
     }
 
-
+    /**
+    * void InstatiateFloorTiles()
+    * 
+    * Instantiate floor prefab for each floor tile
+    * 
+    * @PARAM Null
+    * @Return Null
+    */
     void InstantiateFloorTiles()
     {
         // Go through all the tiles in the jagged array...
@@ -188,6 +219,14 @@ public class BoardCreator : MonoBehaviour
         }
     }
 
+    /**
+    * void InstatiateWallTiles()
+    * 
+    * Instantiate wall prefab for each floor tile
+    * 
+    * @PARAM Null
+    * @Return Null
+    */
     void InstantiateWallTiles()
     {
 
@@ -265,7 +304,7 @@ public class BoardCreator : MonoBehaviour
     }
     void InstantiateOuterWalls()
     {
-       /* // The outer walls are one unit left, right, up and down from the board.
+       // The outer walls are one unit left, right, up and down from the board.
         float leftEdgeX = -1f;
         float rightEdgeX = columns + 0f;
         float bottomEdgeY = -1f;
@@ -277,7 +316,7 @@ public class BoardCreator : MonoBehaviour
 
         // Instantiate both horizontal walls, these are one in left and right from the outer walls.
         InstantiateHorizontalOuterWall(leftEdgeX + 1f, rightEdgeX - 1f, bottomEdgeY);
-        InstantiateHorizontalOuterWall(leftEdgeX + 1f, rightEdgeX - 1f, topEdgeY);*/
+        InstantiateHorizontalOuterWall(leftEdgeX + 1f, rightEdgeX - 1f, topEdgeY);
     }
 
 
@@ -313,6 +352,14 @@ public class BoardCreator : MonoBehaviour
     }
 
 
+    /**
+    * void InstatiateFromArray()
+    * 
+    * Instantiate a random prefab from an array at a (x, y) Coordinate
+    * 
+    * @PARAM GameObject[] prefabs, float xCoord, float yCoord
+    * @Return Null
+    */
     void InstantiateFromArray(GameObject[] prefabs, float xCoord, float yCoord)
     {
         // Create a random index for the array.
@@ -327,4 +374,27 @@ public class BoardCreator : MonoBehaviour
         // Set the tile's parent to the board holder.
         tileInstance.transform.parent = boardHolder.transform;
     }
+
+    void InstantiatePlayer()
+    {
+        Vector3 playerPosition = new Vector3(rooms[0].xPos + rooms[0].roomWidth / 2, rooms[0].yPos + rooms[0].roomHeight / 2, -5);
+        Instantiate(player, playerPosition, Quaternion.identity);
+    }
+
+    void InstantiateExit()
+    {
+        Vector3 exitPosition;
+        Room lastRoom = rooms[rooms.Length - 1];
+        
+        if(lastRoom.enteringCorridor == Direction.West || lastRoom.enteringCorridor == Direction.North)
+            exitPosition = new Vector3(lastRoom.xPos, lastRoom.yPos, -5);
+        else
+            exitPosition = new Vector3(lastRoom.xPos + lastRoom.roomWidth - 1, lastRoom.yPos + lastRoom.roomHeight - 1, -5);
+
+        Instantiate(exit, exitPosition, Quaternion.identity);
+
+        Debug.Log(lastRoom.enteringCorridor);
+    }
+
+
 }
