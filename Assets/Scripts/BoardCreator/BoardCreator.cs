@@ -387,13 +387,11 @@ public class BoardCreator : MonoBehaviour
         Room lastRoom = rooms[rooms.Length - 1];
         
         if(lastRoom.enteringCorridor == Direction.West || lastRoom.enteringCorridor == Direction.North)
-            exitPosition = new Vector3(lastRoom.xPos, lastRoom.yPos, -5);
-        else
             exitPosition = new Vector3(lastRoom.xPos + lastRoom.roomWidth - 1, lastRoom.yPos + lastRoom.roomHeight - 1, -5);
+        else
+            exitPosition = new Vector3(lastRoom.xPos, lastRoom.yPos, -5);
 
         Instantiate(exit, exitPosition, Quaternion.identity);
-
-        Debug.Log(lastRoom.enteringCorridor);
     }
 
 
