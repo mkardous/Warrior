@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Completed
 {
@@ -19,7 +20,7 @@ namespace Completed
 		private Text levelText;									//Text to display current level number.
 		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
 		private int level = 1;									//Current level number, expressed in game as "Day 1".
-		private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
+		private bool doingSetup;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
 		
 		
 		
@@ -68,8 +69,11 @@ namespace Completed
 		{
 			//While doingSetup is true the player can't move, prevent player from moving while title card is up.
 			doingSetup = true;
-			
-
+            levelImage = GameObject.Find("LevelImage");
+            levelText = GameObject.Find("LevelText").GetComponent<Text>();
+            levelText.text = "Day " + level;
+            levelImage.SetActive(true);
+            Invoke("HideLevelImage", levelStartDelay);
 			
 		}
 		
@@ -100,7 +104,7 @@ namespace Completed
 		public void GameOver()
 		{
 			//Set levelText to display number of levels passed and game over message
-			levelText.text = "After " + level + " days, you starved.";
+			levelText.text = "After " + level + " days, you died.";
 			
 			//Enable black background image gameObject.
 			levelImage.SetActive(true);

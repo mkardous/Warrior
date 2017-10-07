@@ -150,13 +150,13 @@ public class BoardCreator : MonoBehaviour
     }
 
     /**
-* void SetTilesValuesForCorridors()
-* 
-* Defines floor tile for each corridor
-* 
-* @PARAM Null
-* @Return Null
-*/
+    * void SetTilesValuesForCorridors()
+    * 
+    * Defines floor tile for each corridor
+    * 
+    * @PARAM Null
+    * @Return Null
+    */
     void SetTilesValuesForCorridors()
     {
         // Go through every corridor...
