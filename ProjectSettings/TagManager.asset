@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Weapon
+  - Exit
   layers:
   - Default
   - TransparentFX

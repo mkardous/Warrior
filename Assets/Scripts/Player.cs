@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class Player : MonoBehaviour
     public GameObject Attack_A;
     //public GameObject Attack_B;
     public float fireRate = 2;
+    public float restartDelay = 1f;
 
     private Animator animator;
     private Rigidbody2D rb2D;
@@ -69,5 +72,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void restart()
+    {
+        SceneManager.LoadScene(0);
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Exit")
+        {
+            Invoke("restart", 0);
+            enabled = false;
+        }
+    }
 }

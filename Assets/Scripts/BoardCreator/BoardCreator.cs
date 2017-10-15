@@ -28,9 +28,9 @@ public class BoardCreator : MonoBehaviour
     private Room[] rooms;                                     // All the rooms that are created for this board.
     private Corridor[] corridors;                             // All the corridors that connect the rooms.
     private GameObject boardHolder;                           // GameObject that acts as a container for all other tiles.
+    public static BoardCreator instance = null;
 
-
-    private void Start()
+    public void SetUpScene()
     {
         // Create the board holder.
         boardHolder = new GameObject("BoardHolder");
@@ -48,6 +48,7 @@ public class BoardCreator : MonoBehaviour
         InstantiatePlayer();
         InstantiateExit();
     }
+
 
    /**
    * void SetUpTilesArray()

@@ -19,8 +19,9 @@ namespace Completed
 		
 		private Text levelText;									//Text to display current level number.
 		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
-		private int level = 1;									//Current level number, expressed in game as "Day 1".
-		private bool doingSetup;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
+		private int level = 1;                                  //Current level number, expressed in game as "Day 1".
+        private BoardCreator boardscript; 
+		private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
 		
 		
 		
@@ -41,7 +42,8 @@ namespace Completed
 			
 			//Sets this to not be destroyed when reloading scene
 			DontDestroyOnLoad(gameObject);
-					
+
+            boardscript = GetComponent<BoardCreator>();
 			
 			//Call the InitGame function to initialize the first level 
 			InitGame();
@@ -74,7 +76,9 @@ namespace Completed
             levelText.text = "Day " + level;
             levelImage.SetActive(true);
             Invoke("HideLevelImage", levelStartDelay);
-			
+            boardscript.SetUpScene();
+
+            doingSetup = false;
 		}
 		
 		
