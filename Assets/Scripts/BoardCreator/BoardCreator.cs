@@ -28,10 +28,12 @@ public class BoardCreator : MonoBehaviour
     private Room[] rooms;                                     // All the rooms that are created for this board.
     private Corridor[] corridors;                             // All the corridors that connect the rooms.
     private GameObject boardHolder;                           // GameObject that acts as a container for all other tiles.
-    public static BoardCreator instance = null;
+
 
     public void SetUpScene()
     {
+        if (GameObject.Find("BoardHolder"))
+            Destroy(GameObject.Find("BoardHolder"));
         // Create the board holder.
         boardHolder = new GameObject("BoardHolder");
 
@@ -379,7 +381,9 @@ public class BoardCreator : MonoBehaviour
     void InstantiatePlayer()
     {
         Vector3 playerPosition = new Vector3(rooms[0].xPos + rooms[0].roomWidth / 2, rooms[0].yPos + rooms[0].roomHeight / 2, -5);
-        Instantiate(player, playerPosition, Quaternion.identity);
+        GameObject playerInstance = Instantiate(player, playerPosition, Quaternion.identity);
+        playerInstance.transform.parent = boardHolder.transform;
+
     }
 
     void InstantiateExit()
@@ -392,7 +396,10 @@ public class BoardCreator : MonoBehaviour
         else
             exitPosition = new Vector3(lastRoom.xPos, lastRoom.yPos, -5);
 
-        Instantiate(exit, exitPosition, Quaternion.identity);
+       GameObject exitInstance =  Instantiate(exit, exitPosition, Quaternion.identity);
+
+        exitInstance.transform.parent = boardHolder.transform;
+
     }
 
 
